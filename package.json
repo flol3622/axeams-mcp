@@ -1,0 +1,52 @@
+{
+  "name": "axeams-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for Microsoft Teams for Mac: chats, channels, threads and shared files through macOS Accessibility, no Graph API or tokens",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "teams",
+    "microsoft-teams",
+    "macos",
+    "accessibility",
+    "claude",
+    "claude-code",
+    "chat"
+  ],
+  "homepage": "https://github.com/flol3622/axeams-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flol3622/axeams-mcp.git"
+  },
+  "license": "MIT",
+  "author": "flol3622 (https://github.com/flol3622)",
+  "type": "module",
+  "bin": {
+    "axeams-mcp": "dist/axeams-mcp.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "darwin"
+  ],
+  "scripts": {
+    "build": "sh scripts/build.sh",
+    "build:helper": "sh scripts/build-helper.sh",
+    "start": "bun run src/server.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit -p .",
+    "validate": "claude plugin validate . --profile directory"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7",
+    "typescript": "^5"
+  }
+}

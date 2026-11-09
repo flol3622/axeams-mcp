@@ -1,0 +1,15 @@
+{
+  "name": "axeams",
+  "description": "Claude Code plugin for Microsoft Teams for Mac: chats, channels, threads and shared files through macOS Accessibility",
+  "owner": {
+    "name": "flol3622",
+    "url": "https://github.com/flol3622"
+  },
+  "plugins": [
+    {
+      "name": "axeams-mcp",
+      "source": "./",
+      "description": "Read-only chats, channels, threads and shared files of Microsoft Teams for Mac through macOS Accessibility"
+    }
+  ]
+}

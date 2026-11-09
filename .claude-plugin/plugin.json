@@ -1,0 +1,32 @@
+{
+  "name": "axeams-mcp",
+  "version": "0.1.0",
+  "description": "Read-only Microsoft Teams for Mac for Claude: chats, channels, threads and shared files through macOS Accessibility. No Graph API, no tokens, never posts.",
+  "author": {
+    "name": "flol3622",
+    "url": "https://github.com/flol3622"
+  },
+  "homepage": "https://github.com/flol3622/axeams-mcp",
+  "repository": "https://github.com/flol3622/axeams-mcp",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "keywords": [
+    "teams",
+    "chat",
+    "channels",
+    "macos",
+    "accessibility",
+    "mcp"
+  ],
+  "mcpServers": {
+    "axeams": {
+      "command": "/bin/sh",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/scripts/start.sh"
+      ],
+      "env": {
+        "AXEAMS_DATA": "${CLAUDE_PLUGIN_DATA}"
+      }
+    }
+  }
+}
